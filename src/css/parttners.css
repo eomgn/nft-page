@@ -1,0 +1,11 @@
+.parttners {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   background-color: transparent;
+}
+
+.parttners img {
+   padding: 2rem;
+}
