@@ -87,7 +87,7 @@
 
    margin-top: 6.3rem;
 }
-.hd-section-left-buttons #btn {
+.btn {
    padding: 1.3rem 5.5rem;
 
    font-size: 2rem;
@@ -101,7 +101,7 @@
    cursor: pointer;
 }
 
-.hd-section-left-buttons #btn:hover {
+.btn:hover {
    background-color: var(--color-blue-light);
    border: 0.1rem solid var(--color-blue-light);
 }

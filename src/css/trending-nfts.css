@@ -1,5 +1,6 @@
 #trending-nfts {
-   height: 100rem;
+   display: flex;
+   justify-content: center;
 }
 
 .area-buttom {
@@ -11,8 +12,8 @@
 
 .arrow-left,
 .arrow-right {
-   height: 30rem;
-   padding: 4vw;
+   height: 47.5rem;
+   padding: 2vw;
 
    font-size: 4rem;
    color: var(--color-white);
@@ -24,18 +25,19 @@
       rgba(255, 255, 255, 0.15) 136.58%
    );
    filter: drop-shadow(0px 4px 49px rgba(0, 7, 72, 0.12));
-   backdrop-filter: blur(0.8rem);
+   backdrop-filter: blur(0.3rem);
 
-   border-radius: 1rem;
+   border-bottom-right-radius: 1rem;
+   border-top-right-radius: 1rem;
    border: none;
 
    cursor: pointer;
 }
 
-.gallery {
+.gallery ul {
    display: flex;
    flex-flow: nowrap;
-   gap: 3rem;
+   gap: 2rem;
 }
 
 .gallery-wrapper {
@@ -45,12 +47,73 @@
 .gallery-wrapper::-webkit-scrollbar {
    display: none;
 }
-.gallery img {
-   border-radius: 5%;
+
+.gallery li {
+   background-color: #412c73;
+   padding: 1rem;
+   border-radius: 1rem;
 }
 
-.item {
+.nft-image img {
    width: 30rem;
    height: 30rem;
-   flex-shrink: 0;
+   border-radius: 1rem;
+}
+
+.nft-details {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   margin-top: 2rem;
+}
+
+.nft-details img:nth-child(1) {
+   width: 6.3rem;
+   height: 6.3rem;
+}
+
+.nft-details span {
+   width: 18rem;
+}
+
+.nft-details span p:nth-child(1) {
+   font-size: 1.6rem;
+   font-weight: 600;
+}
+
+.nft-details span p:nth-child(2) {
+   font-size: 1.1rem;
+   color: #dddd;
+   margin-top: 0.1rem;
+}
+
+.nft-details img:nth-child(3) {
+   width: 4.5rem;
+   height: 4.5rem;
+   border: 4px solid #8072a2;
+   border-radius: 50%;
+}
+
+.prices {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 2rem;
+}
+
+.prices span p:nth-child(1) {
+   font-weight: 600;
+}
+
+.prices span:nth-child(3) {
+   text-align: right;
+}
+
+.prices p:nth-child(2) {
+   font-size: 1.2rem;
+}
+
+.current-card {
+   position: relative;
+   border: 5px solid;
 }

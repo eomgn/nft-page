@@ -97,6 +97,16 @@ main {
    .hd-section-left-about {
       justify-content: center;
    }
+
+   .arrow-left,
+   .arrow-right {
+      opacity: 0.1;
+   }
+
+   .arrow-left:hover,
+   .arrow-right:hover {
+      opacity: 1;
+   }
 }
 /*------------------------*/
 
@@ -243,5 +253,16 @@ main {
    .hd-section-left-about {
       justify-content: center;
       flex-direction: column;
+   }
+   /*-----------*/
+
+   .arrow-left,
+   .arrow-right {
+      opacity: 0.1;
+   }
+
+   .arrow-left:hover,
+   .arrow-right:hover {
+      opacity: 1;
    }
 }
