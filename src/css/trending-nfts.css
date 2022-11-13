@@ -1,3 +1,56 @@
 #trending-nfts {
    height: 100rem;
 }
+
+.area-buttom {
+   position: absolute;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.arrow-left,
+.arrow-right {
+   height: 30rem;
+   padding: 4vw;
+
+   font-size: 4rem;
+   color: var(--color-white);
+   line-height: 2.5rem;
+
+   background: linear-gradient(
+      155.14deg,
+      rgba(255, 255, 255, 0) -2.13%,
+      rgba(255, 255, 255, 0.15) 136.58%
+   );
+   filter: drop-shadow(0px 4px 49px rgba(0, 7, 72, 0.12));
+   backdrop-filter: blur(0.8rem);
+
+   border-radius: 1rem;
+   border: none;
+
+   cursor: pointer;
+}
+
+.gallery {
+   display: flex;
+   flex-flow: nowrap;
+   gap: 3rem;
+}
+
+.gallery-wrapper {
+   overflow-x: auto;
+}
+
+.gallery-wrapper::-webkit-scrollbar {
+   display: none;
+}
+.gallery img {
+   border-radius: 5%;
+}
+
+.item {
+   width: 30rem;
+   height: 30rem;
+   flex-shrink: 0;
+}

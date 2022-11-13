@@ -1,6 +1,8 @@
 import './css/index.css'
 /*------------------------*/
 
+/* --- menu mobile - start --- */
+
 const btnMenuMobile = document.querySelector('#btnMenuMobile')
 
 function toggleMenu(event) {
@@ -15,3 +17,5 @@ function toggleMenu(event) {
 
 btnMenuMobile.addEventListener('click', toggleMenu)
 btnMenuMobile.addEventListener('touchstart', toggleMenu)
+
+/* --- menu mobile - end --- */
