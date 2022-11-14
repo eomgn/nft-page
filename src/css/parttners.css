@@ -4,8 +4,15 @@
    justify-content: center;
    flex-wrap: wrap;
    background-color: transparent;
+
+   padding-bottom: 38rem;
+   padding-top: 17rem;
 }
 
 .parttners img {
-   padding: 2rem;
+   padding: 1rem;
+}
+
+.parttners img:nth-child(3) {
+   padding: 0;
 }
