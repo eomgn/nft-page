@@ -5,14 +5,9 @@
    flex-wrap: wrap;
    background-color: transparent;
 
-   padding-bottom: 38rem;
+   padding-bottom: 25rem;
    padding-top: 17rem;
+
+   gap: 6rem;
 }
 
-.parttners img {
-   padding: 1rem;
-}
-
-.parttners img:nth-child(3) {
-   padding: 0;
-}

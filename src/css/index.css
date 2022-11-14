@@ -25,6 +25,17 @@ a {
    text-decoration: none;
 }
 
+::-webkit-scrollbar {
+   background-color: #2f80ed;
+   width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+   background-color: #fff;
+   border-radius: 3rem;
+ 
+}
+
 :root {
    --color-bg: #141843;
    --color-white-text: #fff;
