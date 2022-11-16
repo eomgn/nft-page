@@ -1,6 +1,7 @@
 @import './header.css';
 @import './parttners.css';
 @import './trending-nfts.css';
+@import './topCollections.css';
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 /*------------------------*/
 
@@ -33,7 +34,6 @@ a {
 ::-webkit-scrollbar-thumb {
    background-color: #fff;
    border-radius: 3rem;
- 
 }
 
 :root {
@@ -117,6 +117,18 @@ main {
    .arrow-left:hover,
    .arrow-right:hover {
       opacity: 1;
+   }
+
+   .top-collections-nav nav ul li {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      padding: 0.2rem;
+   }
+
+   .top-collections-nav nav ul li a {
+      width: 100%;
+      text-align: center;
    }
 }
 /*------------------------*/
@@ -275,5 +287,25 @@ main {
    .arrow-left:hover,
    .arrow-right:hover {
       opacity: 1;
+   }
+
+   .top-collections-nav nav ul li {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+   }
+
+   .top-collections-nav nav ul li a {
+      width: 100%;
+      text-align: center;
+   }
+
+   .top-collections-gallery-card {
+      width: 100%;
+   }
+
+   .top-collections-gallery-card .img-card img {
+      width: 100%;
+      height: auto;
    }
 }

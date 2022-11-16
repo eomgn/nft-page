@@ -1,0 +1,102 @@
+#top-collections {
+   padding-top: 25.9rem;
+}
+.top-collections-title {
+   text-align: center;
+   padding-bottom: 6.5rem;
+}
+
+.top-collections-title h3 {
+   background-image: linear-gradient(to right, #69eacb, #eaccf8, #6654f1);
+   -webkit-background-clip: text;
+   background-clip: text;
+   color: transparent;
+   font-weight: 600;
+   font-size: 4rem;
+}
+
+.top-collections-nav nav ul {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   row-gap: 1.8rem;
+   width: 100%;
+   height: fit-content;
+}
+
+.top-collections-nav nav ul li a {
+   color: var(--color-white-text);
+   padding: 0.8rem 4rem;
+   border: 1px solid #fff;
+   border-radius: 6rem;
+}
+.top-collections-nav nav ul li a:hover {
+   background-color: var(--color-blue-light);
+   border: 1px solid var(--color-blue-light);
+}
+
+.top-collections-gallery {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   row-gap: 1rem;
+   width: 100%;
+   padding-top: 6.5rem;
+}
+
+.top-collections-gallery-card {
+   width: fit-content;
+   padding: 1.5rem;
+
+   background: linear-gradient(
+      155.14deg,
+      rgba(0, 0, 0, 0) -2.13%,
+      rgba(255, 255, 255, 0.15) 136.58%
+   );
+   filter: drop-shadow(0px 4px 49px rgba(0, 7, 72, 0.12));
+   backdrop-filter: blur(7.5px);
+
+   border-radius: 20px;
+}
+
+.top-collections-gallery-card .img-card img {
+   width: 21rem;
+   height: auto;
+}
+
+.top-collections-gallery-card .name-card {
+   font-weight: 600;
+   font-size: 2.2rem;
+   line-height: 3.3rem;
+   color: var(--color-white-text);
+}
+
+.top-collections-gallery-card .created-card {
+   font-weight: 500;
+   font-size: 1.3rem;
+   line-height: 2rem;
+
+   color: #bbb;
+
+   padding-top: 0.5rem;
+   padding-bottom: 2.5rem;
+}
+
+.top-collections-gallery-card .detail-card-price,
+.top-collections-gallery-card .detail-card-percent {
+   display: flex;
+   justify-content: space-between;
+}
+
+.top-collections-gallery-card .detail-card-price {
+   font-weight: 600;
+   font-size: 2rem;
+   line-height: 3rem;
+
+   color: var(--color-white-text);
+}
+
+.top-collections-gallery-card .detail-card-percent {
+   font-size: 1.4rem;
+   line-height: 2.1rem;
+}

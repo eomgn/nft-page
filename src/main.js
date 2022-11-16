@@ -59,3 +59,23 @@ controls.forEach(control => {
 })
 
 /* --- carousel - trending-nfts - end --- */
+
+/*------------------------*/
+
+/* --- value positive or negative [top collections] - start --- */
+
+const percents = document.querySelectorAll('.percents')
+
+percents.forEach(card => {
+   const formated = card.innerHTML.replace(/.[1-100].[1-100]/)
+
+   const formatedNumber = parseFloat(formated)
+
+   if (formatedNumber > 0) {
+      card.style.color = 'green'
+   } else {
+      card.style.color = 'red'
+   }
+})
+
+/* --- value positive or negative [top collections] - end --- */
