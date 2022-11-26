@@ -1,81 +1,112 @@
 import './css/index.css'
 /*------------------------*/
 
-/* --- menu mobile - start --- */
+/*--- MENU MOBILE - START */
+const btnMobile = document.querySelector('#btnMobile')
 
-const btnMenuMobile = document.querySelector('#btnMenuMobile')
-
-function toggleMenu(event) {
+function toggleMenu() {
    const nav = document.querySelector('#nav')
-   const rmvActive = document.querySelector('#rmvActive')
-
-   if (event.type === 'touchstart') event.preventDefault()
 
    nav.classList.toggle('active')
-   rmvActive.classList.toggle('activeRmv')
 }
 
-btnMenuMobile.addEventListener('click', toggleMenu)
-btnMenuMobile.addEventListener('touchstart', toggleMenu)
+btnMobile.addEventListener('click', toggleMenu)
 
-/* --- menu mobile - end --- */
+/*--- MENU MOBILE - END */
+/*-----*/
+/*-----*/
+/*-----*/
+/*--- PERCENTAGE NEGATIVE OR POSITIVE - START */
 
-/*------------------------*/
+const percents = document.querySelectorAll('#percent')
 
-/* --- carousel - trending-nfts - start --- */
+percents.forEach(element => {
+   const getPercents = element.innerHTML.replace(/.[1-100].[1-100]/)
 
-const controls = document.querySelectorAll('.area-buttom .control')
-let currentCard = 0
-const card = document.querySelectorAll('.gallery ul .card')
-const maxCards = card.length
+   const getPercentsTransformNumber = parseFloat(getPercents)
+
+   if (getPercentsTransformNumber > 0) {
+      element.style.color = '#33FF33'
+   } else {
+      element.style.color = '#E94F4F'
+   }
+})
+
+/*--- PERCENTAGE NEGATIVE OR POSITIVE - END */
+/*-----*/
+/*-----*/
+/*-----*/
+/*--- PREVIOUS OR NEXT IMAGE [CARROUSEL] - START */
+
+const controls = document.querySelectorAll('.control')
+let currentItem = 0
+const items = document.querySelectorAll('.item')
+const maxItems = items.length
 
 controls.forEach(control => {
    control.addEventListener('click', () => {
       const isLeft = control.classList.contains('arrow-left')
 
       if (isLeft) {
-         currentCard -= 1
+         currentItem -= 1
       } else {
-         currentCard += 1
+         currentItem += 1
       }
 
-      if (currentCard >= maxCards) {
-         currentCard = 0
+      if (currentItem >= maxItems) {
+         currentItem = 0
       }
 
-      if (currentCard < 0) {
-         currentCard = maxCards - 1
+      if (currentItem < 0) {
+         currentItem = maxItems - 1
       }
 
-      card.forEach(card => card.classList.remove('current-card'))
-
-      card[currentCard].scrollIntoView({
-         inline: 'center',
-         behavior: 'smooth'
+      items.forEach(item => {
+         item.classList.remove('current-item')
       })
 
-      card[currentCard].classList.add('current-card')
+      items[currentItem].scrollIntoView({
+         inline: 'center',
+         block: 'center'
+      })
+
+      items[currentItem].classList.add('current-item')
    })
 })
 
-/* --- carousel - trending-nfts - end --- */
+/*--- PREVIOUS OR NEXT IMAGE [CARROUSEL] - END */
 
-/*------------------------*/
+/*--- SWIPER JS - CARROUSEL - START */
 
-/* --- value positive or negative [top collections] - start --- */
-
-const percents = document.querySelectorAll('.percents')
-
-percents.forEach(card => {
-   const formated = card.innerHTML.replace(/.[1-100].[1-100]/)
-
-   const formatedNumber = parseFloat(formated)
-
-   if (formatedNumber > 0) {
-      card.style.color = 'green'
-   } else {
-      card.style.color = 'red'
+var swiper = new Swiper('.swiper', {
+   slidesPerView: 3,
+   spaceBetween: 30,
+   slidesPerGroup: 1,
+   loop: true,
+   loopFillGroupWithBlank: true,
+   navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
    }
 })
 
-/* --- value positive or negative [top collections] - end --- */
+/*--- SWIPER JS - CARROUSEL - END */
+
+/*--- MENU FIXED SCROLLY - START */
+
+const navScroll = document.querySelector('.header-content')
+const navScrollTopFixed = navScroll.offsetTop
+
+window.onscroll = () => {
+   MenuFixedTop()
+}
+
+function MenuFixedTop() {
+   if (window.pageYOffset >= navScrollTopFixed) {
+      navScroll.classList.add('FixedTop')
+   } else {
+      navScroll.classList.remove('FixedTop')
+   }
+}
+
+/*--- MENU FIXED SCROLLY - END */

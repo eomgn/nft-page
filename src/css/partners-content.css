@@ -1,0 +1,18 @@
+/*--- partners-content - START ---*/
+
+.partners-content {
+   width: 100%;
+
+   text-align: center;
+   flex-wrap: wrap;
+   align-items: center;
+
+   margin-top: 17.1rem;
+}
+
+.partners-content img {
+   max-width: 100%;
+   margin: 1rem;
+}
+
+/*--- partners-content - END---*/

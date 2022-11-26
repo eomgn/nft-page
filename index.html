@@ -1,35 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_BR">
    <head>
       <meta charset="UTF-8" />
-      <link rel="icon" type="image/svg+xml" href="/icon.svg" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>NFT Page | MGN</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, user-scalable=no" />
+
+      <!-- icon page -->
+      <link rel="icon" type="image/svg+xml" href="/svg/icon-page.svg" />
+      <!-- title page -->
+      <title>NFT-Landing page | MGN</title>
+      <!-- CSS -->
+      <link rel="stylesheet" href="./src/css/style.css" />
+      <!-- Swiper -->
+      <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+      />
    </head>
    <body>
-      <header>
-         <div class="container">
-            <div id="header">
-               <a id="logo" href=""><img src="/logo.svg" alt="" /></a>
-               <nav id="nav">
-                  <button id="btnMenuMobile">
-                     Menu
+      <!-- start header -->
 
-                     <span id="tr-hamb"></span>
-                  </button>
-                  <ul id="menu">
-                     <li><a href="">Marketplace</a></li>
-                     <li><a href="">Collection</a></li>
-                     <li><a href="">Community</a></li>
-                     <li><a href="">Create</a></li>
-                     <li><a href="">Connect Wallet</a></li>
-                  </ul>
-               </nav>
+      <header id="home">
+         <div class="container">
+            <div class="header-content">
+               <div class="logo">
+                  <img src="/svg/logo.svg" alt="Logo" />
+               </div>
+               <div class="menu-desk">
+                  <nav id="nav">
+                     <button id="btnMobile">
+                        Menu
+
+                        <span id="trice"></span>
+                     </button>
+                     <ul id="menu">
+                        <li><a href="#home">Marketplace</a></li>
+                        <li><a href="#carousel">Collection</a></li>
+                        <li><a href="#categories">Community</a></li>
+                        <li><a href="#created_or_sell">Create</a></li>
+                        <li>
+                           <a
+                              href="https://www.linkedin.com/in/eomgn/"
+                              target="_blank"
+                              >Connect Wallet</a
+                           >
+                        </li>
+                     </ul>
+                  </nav>
+               </div>
             </div>
 
-            <div id="section">
-               <div class="hd-section-left">
-                  <div class="hd-section-left-title">
+            <div class="header-low-content">
+               <div class="header-low-left">
+                  <div class="header-low-left-title">
                      <h1>
                         Discover collect, & sell <span>Extraordinary</span> NFTs
                      </h1>
@@ -39,582 +62,787 @@
                         Discover the best NFT collections.
                      </p>
                   </div>
-                  <div class="hd-section-left-buttons">
-                     <button class="btn">Explore</button>
-                     <button class="btn">Create</button>
+
+                  <div class="header-low-left-buttons">
+                     <button>Explore</button>
+                     <button>Create</button>
                   </div>
-                  <div class="hd-section-left-about">
-                     <div class="about-data">
+
+                  <div class="header-low-left-about">
+                     <div class="left-about">
                         <span>432K+</span>
                         <p>Collections</p>
                      </div>
-                     <div class="about-data">
+
+                     <div class="left-about">
                         <span>200K+</span>
                         <p>Artists</p>
                      </div>
-                     <div class="about-data">
+
+                     <div class="left-about">
                         <span>10K+</span>
                         <p>Community</p>
                      </div>
                   </div>
                </div>
-               <div class="hd-section-right">
-                  <img id="rmvActive" src="/header-img.svg" alt="" />
+               <div class="header-low-right">
+                  <img src="/svg/hero.svg" alt="" />
                </div>
             </div>
          </div>
       </header>
+      <!-- end header -->
 
-      <main>
-         <section id="parttners">
-            <div class="container">
-               <div class="parttners">
-                  <img src="/metamask.svg" alt="" srcset="" />
-                  <img src="/truste-wallet.svg" alt="" srcset="" />
-                  <img src="/wallet-connect.svg" alt="" srcset="" />
-                  <img src="/exodus.svg" alt="" srcset="" />
-                  <img src="/safepal.svg" alt="" srcset="" />
-               </div>
-            </div>
-         </section>
+      <!-- --------------- -->
 
-         <div id="trending-nfts">
-            <span><h3>Trending NFTs</h3></span>
+      <!-- start artcile with partner content -->
 
-            <div class="gallery-wrapper">
-               <div class="area-buttom">
-                  <button
-                     class="arrow-left control"
-                     aria-label="Previous image"
-                  >
-                     ◀
-                  </button>
+      <section>
+         <div class="container">
+            <div class="partners-content">
+               <img src="/svg/partners/metamask.svg" alt="Metamask" />
 
-                  <button class="arrow-right control" aria-label="Next image">
-                     ▶
-                  </button>
-               </div>
-               <div class="gallery">
-                  <ul>
-                     <li class="card current-card">
-                        <div class="nft-image">
-                           <img
-                              src="./public/gallery-trending/nft1.png"
-                              alt="NFT"
-                           />
-                        </div>
-                        <div class="nft-details">
-                           <img
-                              src="./public/gallery-trending/avatar1.svg"
-                              alt="Avatar"
-                           />
-                           <span>
-                              <p>CryptoPunk 3D #13</p>
-                              <p>3D cryptopunk</p>
-                           </span>
-                           <img
-                              src="./public/gallery-trending/icon.svg"
-                              alt=""
-                           />
-                        </div>
+               <img src="/svg/partners/truste-wallet.svg" alt="Truste Wallet" />
 
-                        <div class="prices">
-                           <span>
-                              <p>9.61 ETH</p>
-                              <p>latest Bid</p>
-                           </span>
-                           <span>
-                              <p>4.12 ETH</p>
-                              <p>from</p>
-                           </span>
-                           <span>
-                              <p>$103,025</p>
-                              <p>-2.25%</p>
-                           </span>
-                        </div>
-                     </li>
+               <img
+                  src="/svg/partners/wallet-connect.svg"
+                  alt="Wallet Connect"
+               />
 
-                     <li class="card">
-                        <div class="nft-image">
-                           <img
-                              src="./public/gallery-trending/nft2.png"
-                              alt="NFT"
-                           />
-                        </div>
-                        <div class="nft-details">
-                           <img
-                              src="./public/gallery-trending/avatar1.svg"
-                              alt="Avatar"
-                           />
-                           <span>
-                              <p>CryptoPunk 3D #13</p>
-                              <p>3D cryptopunk</p>
-                           </span>
-                           <img
-                              src="./public/gallery-trending/icon.svg"
-                              alt=""
-                           />
-                        </div>
+               <img src="/svg/partners/exodus.svg" alt="Exodus" />
 
-                        <div class="prices">
-                           <span>
-                              <p>9.61 ETH</p>
-                              <p>latest Bid</p>
-                           </span>
-                           <span>
-                              <p>4.12 ETH</p>
-                              <p>from</p>
-                           </span>
-                           <span>
-                              <p>$103,025</p>
-                              <p>-2.25%</p>
-                           </span>
-                        </div>
-                     </li>
-
-                     <li class="card">
-                        <div class="nft-image">
-                           <img
-                              src="./public/gallery-trending/nft3.png"
-                              alt="NFT"
-                           />
-                        </div>
-                        <div class="nft-details">
-                           <img
-                              src="./public/gallery-trending/avatar1.svg"
-                              alt="Avatar"
-                           />
-                           <span>
-                              <p>CryptoPunk 3D #13</p>
-                              <p>3D cryptopunk</p>
-                           </span>
-                           <img
-                              src="./public/gallery-trending/icon.svg"
-                              alt=""
-                           />
-                        </div>
-
-                        <div class="prices">
-                           <span>
-                              <p>9.61 ETH</p>
-                              <p>latest Bid</p>
-                           </span>
-                           <span>
-                              <p>4.12 ETH</p>
-                              <p>from</p>
-                           </span>
-                           <span>
-                              <p>$103,025</p>
-                              <p>-2.25%</p>
-                           </span>
-                        </div>
-                     </li>
-
-                     <li class="card">
-                        <div class="nft-image">
-                           <img
-                              src="./public/gallery-trending/nft4.png"
-                              alt="NFT"
-                           />
-                        </div>
-                        <div class="nft-details">
-                           <img
-                              src="./public/gallery-trending/avatar1.svg"
-                              alt="Avatar"
-                           />
-                           <span>
-                              <p>CryptoPunk 3D #13</p>
-                              <p>3D cryptopunk</p>
-                           </span>
-                           <img
-                              src="./public/gallery-trending/icon.svg"
-                              alt=""
-                           />
-                        </div>
-
-                        <div class="prices">
-                           <span>
-                              <p>9.61 ETH</p>
-                              <p>latest Bid</p>
-                           </span>
-                           <span>
-                              <p>4.12 ETH</p>
-                              <p>from</p>
-                           </span>
-                           <span>
-                              <p>$103,025</p>
-                              <p>-2.25%</p>
-                           </span>
-                        </div>
-                     </li>
-
-                     <li class="card">
-                        <div class="nft-image">
-                           <img
-                              src="./public/gallery-trending/nft5.png"
-                              alt="NFT"
-                           />
-                        </div>
-                        <div class="nft-details">
-                           <img
-                              src="./public/gallery-trending/avatar1.svg"
-                              alt="Avatar"
-                           />
-                           <span>
-                              <p>CryptoPunk 3D #13</p>
-                              <p>3D cryptopunk</p>
-                           </span>
-                           <img
-                              src="./public/gallery-trending/icon.svg"
-                              alt=""
-                           />
-                        </div>
-
-                        <div class="prices">
-                           <span>
-                              <p>9.61 ETH</p>
-                              <p>latest Bid</p>
-                           </span>
-                           <span>
-                              <p>4.12 ETH</p>
-                              <p>from</p>
-                           </span>
-                           <span>
-                              <p>$103,025</p>
-                              <p>-2.25%</p>
-                           </span>
-                        </div>
-                     </li>
-
-                     <li class="card">
-                        <div class="nft-image">
-                           <img
-                              src="./public/gallery-trending/nft6.png"
-                              alt="NFT"
-                           />
-                        </div>
-                        <div class="nft-details">
-                           <img
-                              src="./public/gallery-trending/avatar1.svg"
-                              alt="Avatar"
-                           />
-                           <span>
-                              <p>CryptoPunk 3D #13</p>
-                              <p>3D cryptopunk</p>
-                           </span>
-                           <img
-                              src="./public/gallery-trending/icon.svg"
-                              alt=""
-                           />
-                        </div>
-
-                        <div class="prices">
-                           <span>
-                              <p>9.61 ETH</p>
-                              <p>latest Bid</p>
-                           </span>
-                           <span>
-                              <p>4.12 ETH</p>
-                              <p>from</p>
-                           </span>
-                           <span>
-                              <p>$103,025</p>
-                              <p>-2.25%</p>
-                           </span>
-                        </div>
-                     </li>
-
-                     <li class="card">
-                        <div class="nft-image">
-                           <img
-                              src="./public/gallery-trending/nft7.png"
-                              alt="NFT"
-                           />
-                        </div>
-                        <div class="nft-details">
-                           <img
-                              src="./public/gallery-trending/avatar1.svg"
-                              alt="Avatar"
-                           />
-                           <span>
-                              <p>CryptoPunk 3D #13</p>
-                              <p>3D cryptopunk</p>
-                           </span>
-                           <img
-                              src="./public/gallery-trending/icon.svg"
-                              alt=""
-                           />
-                        </div>
-
-                        <div class="prices">
-                           <span>
-                              <p>9.61 ETH</p>
-                              <p>latest Bid</p>
-                           </span>
-                           <span>
-                              <p>4.12 ETH</p>
-                              <p>from</p>
-                           </span>
-                           <span>
-                              <p>$103,025</p>
-                              <p>-2.25%</p>
-                           </span>
-                        </div>
-                     </li>
-
-                     <li class="card">
-                        <div class="nft-image">
-                           <img
-                              src="./public/gallery-trending/nft8.png"
-                              alt="NFT"
-                           />
-                        </div>
-                        <div class="nft-details">
-                           <img
-                              src="./public/gallery-trending/avatar1.svg"
-                              alt="Avatar"
-                           />
-                           <span>
-                              <p>CryptoPunk 3D #13</p>
-                              <p>3D cryptopunk</p>
-                           </span>
-                           <img
-                              src="./public/gallery-trending/icon.svg"
-                              alt=""
-                           />
-                        </div>
-
-                        <div class="prices">
-                           <span>
-                              <p>9.61 ETH</p>
-                              <p>latest Bid</p>
-                           </span>
-                           <span>
-                              <p>4.12 ETH</p>
-                              <p>from</p>
-                           </span>
-                           <span>
-                              <p>$103,025</p>
-                              <p>-2.25%</p>
-                           </span>
-                        </div>
-                     </li>
-                  </ul>
-               </div>
-               <div class="btn-gallery">
-                  <button class="btn">see more</button>
-               </div>
+               <img src="/svg/partners/safepal.svg" alt="Safepal" />
             </div>
          </div>
+      </section>
 
-         <div id="top-collections">
+      <!-- end artcile with partner content -->
+
+      <main>
+         <article id="carousel">
             <div class="container">
-               <div class="top-collections-title">
-                  <h3>Top Collections</h3>
-               </div>
-               <div class="top-collections-nav">
-                  <nav>
-                     <ul>
-                        <li><a href="">Art</a></li>
-                        <li><a href="">Collectibles</a></li>
-                        <li><a href="">Metaverse</a></li>
-                        <li><a href="">Virtual Worlds</a></li>
-                        <li><a href="">Sports</a></li>
-                        <li><a href="">Music</a></li>
-                     </ul>
-                  </nav>
-               </div>
-               <div class="top-collections-gallery-container">
-                  <div class="top-collections-gallery">
-                     <div class="top-collections-gallery-card">
-                        <div class="img-card">
+               <h3>Trending NFTs</h3>
+            </div>
+            <div class="carousel-content">
+               <button class="arrow-left control" aria-label="Previous Image">
+                  ◀
+               </button>
+               <button class="arrow-right control" aria-label="Next Image">
+                  ▶
+               </button>
+
+               <div class="gallery-wrapper">
+                  <div class="gallery">
+                     <div class="card item current-item">
+                        <div class="nft-image">
                            <img
-                              src="./public/top-collections/col1.svg"
-                              alt="1"
+                              src="/img/nft7.png"
+                              alt="Imagem do primeiro NFT"
                            />
                         </div>
-                        <div class="name-card">
-                           <p>COOLGUYZZ</p>
+                        <div class="created">
+                           <img
+                              src="/svg/avatar1.svg"
+                              alt="Avatar de criador"
+                           />
+                           <div class="created-name">
+                              <p>CryptoPunk 3D #13</p>
+                              <p>3D cryptopunk</p>
+                           </div>
+                           <img
+                              src="/svg/icon.svg"
+                              alt="Icone Ethereum"
+                              class="icon"
+                           />
                         </div>
-                        <div class="created-card">
-                           <p>Coolguyzz.io</p>
-                        </div>
-                        <div class="detail-card-price">
-                           <p>1.5 ETH</p>
-                           <p>$2045.12</p>
-                        </div>
-                        <div class="detail-card-percent">
-                           <p>Floor Price</p>
-                           <p class="percents">-12.45%</p>
+                        <div class="details">
+                           <div class="details-back">
+                              <p>9.61 ETH</p>
+                              <p>latest Bid</p>
+                           </div>
+                           <div class="details-later">
+                              <p>4.12 ETH</p>
+                              <p>from</p>
+                           </div>
+                           <div class="details-price">
+                              <p>$103,025</p>
+                              <p id="percent">+7.75%</p>
+                           </div>
                         </div>
                      </div>
 
-                     <div class="top-collections-gallery-card">
-                        <div class="img-card">
+                     <div class="card item">
+                        <div class="nft-image">
                            <img
-                              src="./public/top-collections/col2.svg"
-                              alt="1"
+                              src="/img/nft2.png"
+                              alt="Imagem do segundo NFT"
                            />
                         </div>
-                        <div class="name-card">
-                           <p>gangstaboi v.1</p>
+                        <div class="created">
+                           <img
+                              src="/svg/avatar2.svg"
+                              alt="Avatar de criador"
+                           />
+                           <div class="created-name">
+                              <p>CryptoPunk 3D #13</p>
+                              <p>3D cryptopunk</p>
+                           </div>
+                           <img src="/svg/icon.svg" alt="Icone Ethereum" />
                         </div>
-                        <div class="created-card">
-                           <p>GB_Gangs</p>
-                        </div>
-                        <div class="detail-card-price">
-                           <p>2.53 ETH</p>
-                           <p>$4487</p>
-                        </div>
-                        <div class="detail-card-percent">
-                           <p>Floor Price</p>
-                           <p class="percents">+34.5%</p>
+                        <div class="details">
+                           <div class="details-back">
+                              <p>9.61 ETH</p>
+                              <p>latest Bid</p>
+                           </div>
+                           <div class="details-later">
+                              <p>4.12 ETH</p>
+                              <p>from</p>
+                           </div>
+                           <div class="details-price">
+                              <p>$103,025</p>
+                              <p id="percent">-12.45%</p>
+                           </div>
                         </div>
                      </div>
 
-                     <div class="top-collections-gallery-card">
-                        <div class="img-card">
+                     <div class="card item">
+                        <div class="nft-image">
                            <img
-                              src="./public/top-collections/col3.svg"
-                              alt="1"
+                              src="/img/nft3.png"
+                              alt="Imagem do terceiro NFT"
                            />
                         </div>
-                        <div class="name-card">
-                           <p>HyperApe</p>
+                        <div class="created">
+                           <img
+                              src="/svg/avatar3.svg"
+                              alt="Avatar de criador"
+                           />
+                           <div class="created-name">
+                              <p>CryptoPunk 3D #13</p>
+                              <p>3D cryptopunk</p>
+                           </div>
+                           <img src="/svg/icon.svg" alt="Icone Ethereum" />
                         </div>
-                        <div class="created-card">
-                           <p>HyperApe.co</p>
-                        </div>
-                        <div class="detail-card-price">
-                           <p>1.31 ETH</p>
-                           <p>$1743.4</p>
-                        </div>
-                        <div class="detail-card-percent">
-                           <p>Floor Price</p>
-                           <p class="percents">-5.6%</p>
+                        <div class="details">
+                           <div class="details-back">
+                              <p>9.61 ETH</p>
+                              <p>latest Bid</p>
+                           </div>
+                           <div class="details-later">
+                              <p>4.12 ETH</p>
+                              <p>from</p>
+                           </div>
+                           <div class="details-price">
+                              <p>$103,025</p>
+                              <p id="percent">+3.57%</p>
+                           </div>
                         </div>
                      </div>
 
-                     <div class="top-collections-gallery-card">
-                        <div class="img-card">
+                     <div class="card item">
+                        <div class="nft-image">
                            <img
-                              src="./public/top-collections/col4.svg"
-                              alt="1"
+                              src="/img/nft4.png"
+                              alt="Imagem do quarto NFT"
                            />
                         </div>
-                        <div class="name-card">
-                           <p>Lyodd$1</p>
+                        <div class="created">
+                           <img
+                              src="/svg/avatar4.svg"
+                              alt="Avatar de criador"
+                           />
+                           <div class="created-name">
+                              <p>CryptoPunk 3D #13</p>
+                              <p>3D cryptopunk</p>
+                           </div>
+                           <img src="/svg/icon.svg" alt="Icone Ethereum" />
                         </div>
-                        <div class="created-card">
-                           <p>Naomi Po</p>
-                        </div>
-                        <div class="detail-card-price">
-                           <p>1.156 ETH</p>
-                           <p>$1670</p>
-                        </div>
-                        <div class="detail-card-percent">
-                           <p>Floor Price</p>
-                           <p class="percents">+12.45%</p>
+                        <div class="details">
+                           <div class="details-back">
+                              <p>9.61 ETH</p>
+                              <p>latest Bid</p>
+                           </div>
+                           <div class="details-later">
+                              <p>4.12 ETH</p>
+                              <p>from</p>
+                           </div>
+                           <div class="details-price">
+                              <p>$103,025</p>
+                              <p id="percent">-2.25%</p>
+                           </div>
                         </div>
                      </div>
 
-                     <div class="top-collections-gallery-card">
-                        <div class="img-card">
+                     <div class="card item">
+                        <div class="nft-image">
                            <img
-                              src="./public/top-collections/col5.svg"
-                              alt="1"
+                              src="/img/nft5.png"
+                              alt="Imagem do quinto NFT"
                            />
                         </div>
-                        <div class="name-card">
-                           <p>Azuki 3D</p>
+                        <div class="created">
+                           <img
+                              src="/svg/avatar1.svg"
+                              alt="Avatar de criador"
+                           />
+                           <div class="created-name">
+                              <p>CryptoPunk 3D #13</p>
+                              <p>3D cryptopunk</p>
+                           </div>
+                           <img src="/svg/icon.svg" alt="Icone Ethereum" />
                         </div>
-                        <div class="created-card">
-                           <p>AZUKI.JP</p>
-                        </div>
-                        <div class="detail-card-price">
-                           <p>1.5 ETH</p>
-                           <p>$1907</p>
-                        </div>
-                        <div class="detail-card-percent">
-                           <p>Floor Price</p>
-                           <p class="percents">+1.6%</p>
+                        <div class="details">
+                           <div class="details-back">
+                              <p>9.61 ETH</p>
+                              <p>latest Bid</p>
+                           </div>
+                           <div class="details-later">
+                              <p>4.12 ETH</p>
+                              <p>from</p>
+                           </div>
+                           <div class="details-price">
+                              <p>$103,025</p>
+                              <p id="percent">+2.25%</p>
+                           </div>
                         </div>
                      </div>
 
-                     <div class="top-collections-gallery-card">
-                        <div class="img-card">
+                     <div class="card item">
+                        <div class="nft-image">
+                           <img src="/img/nft6.png" alt="Imagem do sexto NFT" />
+                        </div>
+                        <div class="created">
                            <img
-                              src="./public/top-collections/col6.svg"
-                              alt="1"
+                              src="/svg/avatar2.svg"
+                              alt="Avatar de criador"
                            />
+                           <div class="created-name">
+                              <p>CryptoPunk 3D #13</p>
+                              <p>3D cryptopunk</p>
+                           </div>
+                           <img src="/svg/icon.svg" alt="Icone Ethereum" />
                         </div>
-                        <div class="name-card">
-                           <p>CuteApe White</p>
-                        </div>
-                        <div class="created-card">
-                           <p>CuteApe_99</p>
-                        </div>
-                        <div class="detail-card-price">
-                           <p>0.045 ETH</p>
-                           <p>$245.6</p>
-                        </div>
-                        <div class="detail-card-percent">
-                           <p>Floor Price</p>
-                           <p class="percents">-14.5%</p>
+                        <div class="details">
+                           <div class="details-back">
+                              <p>9.61 ETH</p>
+                              <p>latest Bid</p>
+                           </div>
+                           <div class="details-later">
+                              <p>4.12 ETH</p>
+                              <p>from</p>
+                           </div>
+                           <div class="details-price">
+                              <p>$103,025</p>
+                              <p id="percent">-4.85%</p>
+                           </div>
                         </div>
                      </div>
 
-                     <div class="top-collections-gallery-card">
-                        <div class="img-card">
+                     <div class="card item">
+                        <div class="nft-image">
+                           <img src="/img/nft1.png" alt="Imagem do sexto NFT" />
+                        </div>
+                        <div class="created">
                            <img
-                              src="./public/top-collections/col7.svg"
-                              alt="1"
+                              src="/svg/avatar2.svg"
+                              alt="Avatar de criador"
                            />
+                           <div class="created-name">
+                              <p>CryptoPunk 3D #13</p>
+                              <p>3D cryptopunk</p>
+                           </div>
+                           <img src="/svg/icon.svg" alt="Icone Ethereum" />
                         </div>
-                        <div class="name-card">
-                           <p>SneakerHead Vol.1</p>
-                        </div>
-                        <div class="created-card">
-                           <p>SneakerHead.Corp</p>
-                        </div>
-                        <div class="detail-card-price">
-                           <p>1.4 ETH</p>
-                           <p>$1790</p>
-                        </div>
-                        <div class="detail-card-percent">
-                           <p>Floor Price</p>
-                           <p class="percents">+67.9%</p>
-                        </div>
-                     </div>
-
-                     <div class="top-collections-gallery-card">
-                        <div class="img-card">
-                           <img
-                              src="./public/top-collections/col8.svg"
-                              alt="1"
-                           />
-                        </div>
-                        <div class="name-card">
-                           <p>cvltB3AR</p>
-                        </div>
-                        <div class="created-card">
-                           <p>CVLTBEAR</p>
-                        </div>
-                        <div class="detail-card-price">
-                           <p>0.88 ETH</p>
-                           <p>$545</p>
-                        </div>
-                        <div class="detail-card-percent">
-                           <p>Floor Price</p>
-                           <p class="percents">+12.45%</p>
+                        <div class="details">
+                           <div class="details-back">
+                              <p>9.61 ETH</p>
+                              <p>latest Bid</p>
+                           </div>
+                           <div class="details-later">
+                              <p>4.12 ETH</p>
+                              <p>from</p>
+                           </div>
+                           <div class="details-price">
+                              <p>$103,025</p>
+                              <p id="percent">+0.25%</p>
+                           </div>
                         </div>
                      </div>
                   </div>
                </div>
             </div>
+            <a class="btn">see more</a>
+         </article>
+
+         <div id="bg">
+            <article id="topCollections">
+               <h3>Top Collections</h3>
+               <div class="container">
+                  <div class="collections-content">
+                     <div class="collections-menu">
+                        <ul>
+                           <li><a href="">Art</a></li>
+                           <li><a href="">Collectibles</a></li>
+                           <li><a href="">Metaverse</a></li>
+                           <li><a href="">Virtual Worlds</a></li>
+                           <li><a href="">Sports</a></li>
+                           <li><a href="">Music</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="collections-gallery">
+                  <div class="cardi">
+                     <div class="coll-img">
+                        <img
+                           src="/svg/collections/col1.svg"
+                           alt="Top 1 da coleção"
+                        />
+                     </div>
+                     <div class="created-name">
+                        <p>CryptoPunk 3D #13</p>
+                        <p>3D cryptopunk</p>
+                     </div>
+                     <div class="coll-details">
+                        <div class="details-later">
+                           <p>4.12 ETH</p>
+                           <p>Floor price</p>
+                        </div>
+                        <div class="details-price">
+                           <p>$103,025</p>
+                           <p id="percent">-2.25%</p>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="cardi">
+                     <div class="coll-img">
+                        <img
+                           src="/svg/collections/col2.svg"
+                           alt="Top 1 da coleção"
+                        />
+                     </div>
+                     <div class="created-name">
+                        <p>gangstaboi v.1</p>
+                        <p>GB_Gangs</p>
+                     </div>
+                     <div class="coll-details">
+                        <div class="details-later">
+                           <p>2.53 ETH</p>
+                           <p>Floor price</p>
+                        </div>
+                        <div class="details-price">
+                           <p>$4487</p>
+                           <p id="percent">+34.5%</p>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="cardi">
+                     <div class="coll-img">
+                        <img
+                           src="/svg/collections/col3.svg"
+                           alt="Top 1 da coleção"
+                        />
+                     </div>
+                     <div class="created-name">
+                        <p>HyperApe</p>
+                        <p>HyperApe.co</p>
+                     </div>
+                     <div class="coll-details">
+                        <div class="details-later">
+                           <p>1.31 ETH</p>
+                           <p>Floor price</p>
+                        </div>
+                        <div class="details-price">
+                           <p>$1743.4</p>
+                           <p id="percent">-5.6%</p>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="cardi">
+                     <div class="coll-img">
+                        <img
+                           src="/svg/collections/col4.svg"
+                           alt="Top 1 da coleção"
+                        />
+                     </div>
+                     <div class="created-name">
+                        <p>Lyodd$1</p>
+                        <p>Naomi Po</p>
+                     </div>
+                     <div class="coll-details">
+                        <div class="details-later">
+                           <p>1.156 ETH</p>
+                           <p>Floor Price</p>
+                        </div>
+                        <div class="details-price">
+                           <p>$1670</p>
+                           <p id="percent">+12.45%</p>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="cardi">
+                     <div class="coll-img">
+                        <img
+                           src="/svg/collections/col5.svg"
+                           alt="Top 1 da coleção"
+                        />
+                     </div>
+                     <div class="created-name">
+                        <p>Azuki 3D</p>
+                        <p>AZUKI.JP</p>
+                     </div>
+                     <div class="coll-details">
+                        <div class="details-later">
+                           <p>1.5 ETH</p>
+                           <p>Floor Price</p>
+                        </div>
+                        <div class="details-price">
+                           <p>$1907</p>
+                           <p id="percent">+1.6%</p>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="cardi">
+                     <div class="coll-img">
+                        <img
+                           src="/svg/collections/col6.svg"
+                           alt="Top 1 da coleção"
+                        />
+                     </div>
+                     <div class="created-name">
+                        <p>CuteApe White</p>
+                        <p>CuteApe_99</p>
+                     </div>
+                     <div class="coll-details">
+                        <div class="details-later">
+                           <p>0.045 ETH</p>
+                           <p>Floor Price</p>
+                        </div>
+                        <div class="details-price">
+                           <p>$245.6</p>
+                           <p id="percent">-14.5%</p>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="cardi">
+                     <div class="coll-img">
+                        <img
+                           src="/svg/collections/col7.svg"
+                           alt="Top 1 da coleção"
+                        />
+                     </div>
+                     <div class="created-name">
+                        <p>SneakerHead Vol.1</p>
+                        <p>SneakerHead.Corp</p>
+                     </div>
+                     <div class="coll-details">
+                        <div class="details-later">
+                           <p>1.4 ETH</p>
+                           <p>Floor Price</p>
+                        </div>
+                        <div class="details-price">
+                           <p>$1790</p>
+                           <p id="percent">+67.9%</p>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="cardi">
+                     <div class="coll-img">
+                        <img
+                           src="/svg/collections/col8.svg"
+                           alt="Top 1 da coleção"
+                        />
+                     </div>
+                     <div class="created-name">
+                        <p>cvltB3AR</p>
+                        <p>CVLTBEAR</p>
+                     </div>
+                     <div class="coll-details">
+                        <div class="details-later">
+                           <p>0.88 ETH</p>
+                           <p>Floor Price</p>
+                        </div>
+                        <div class="details-price">
+                           <p>$545</p>
+                           <p id="percent">+12.45%</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <a class="btn">see more</a>
+            </article>
+
+            <aside id="categories">
+               <h3>Top Categories</h3>
+               <div class="container">
+                  <div class="categories-content swiper">
+                     <div class="categories swiper-wrapper">
+                        <div class="categories_card swiper-slide">
+                           <div class="card-imgs">
+                              <div class="card-left">
+                                 <img
+                                    src="/svg/categories/art-small_1.svg"
+                                    alt="Categoria Arte"
+                                 />
+                                 <img
+                                    src="/svg/categories/art-small_2.svg"
+                                    alt="Categoria Arte"
+                                 />
+                              </div>
+                              <div class="card-right">
+                                 <img
+                                    src="/svg/categories/art-high.svg"
+                                    alt="Categoria Arte"
+                                 />
+                              </div>
+                           </div>
+                           <div class="txt">Art</div>
+                        </div>
+
+                        <div class="categories_card swiper-slide">
+                           <div class="card-imgs">
+                              <div class="card-left">
+                                 <img
+                                    src="/svg/categories/collectibles-small_1.svg"
+                                    alt="Categoria Arte"
+                                 />
+                                 <img
+                                    src="/svg/categories/collectibles-small_2.svg"
+                                    alt="Categoria Arte"
+                                 />
+                              </div>
+                              <div class="card-right">
+                                 <img
+                                    src="/svg/categories/collectibles-high.svg"
+                                    alt="Categoria Arte"
+                                 />
+                              </div>
+                           </div>
+                           <div class="txt">Collectibles</div>
+                        </div>
+
+                        <div class="categories_card swiper-slide">
+                           <div class="card-imgs">
+                              <div class="card-left">
+                                 <img
+                                    src="svg/categories/virtual-small_1.svg"
+                                    alt="Categoria Arte"
+                                 />
+                                 <img
+                                    src="/svg/categories/virtual-small_2.svg"
+                                    alt="Categoria Arte"
+                                 />
+                              </div>
+                              <div class="card-right">
+                                 <img
+                                    src="/svg/categories/virtual-high.svg"
+                                    alt="Categoria Arte"
+                                 />
+                              </div>
+                           </div>
+                           <div class="txt">Virtual Worlds & Metaverse</div>
+                        </div>
+                     </div>
+
+                     <div class="swiper-button-next"></div>
+                     <div class="swiper-button-prev"></div>
+                  </div>
+                  <a class="btn">see more</a>
+               </div>
+            </aside>
+
+            <section id="created_or_sell">
+               <div class="container">
+                  <div class="create_nfts-content">
+                     <h3>Create and sell your NFTs</h3>
+                     <div class="created_or_sell">
+                        <div class="wallet">
+                           <span>
+                              <img src="/svg/Wallet.svg" alt="" srcset="" />
+                           </span>
+                           <p class="created_or_sell--title">
+                              Set up your wallet
+                           </p>
+                           <p class="created_or_sell--desc">
+                              Once you’ve set up your wallet of choice, connect
+                              it to OpenSea by clicking the wallet icon in the
+                              top right corner. Learn about the wallets we
+                              support.
+                           </p>
+                        </div>
+                        <div class="upload_collection">
+                           <span>
+                              <img src="/svg/Upload.svg" alt="" />
+                           </span>
+                           <p class="created_or_sell--title">
+                              Upload & Create Collection
+                           </p>
+                           <p class="created_or_sell--desc">
+                              Upload your work then Click My Collections and set
+                              up your collection. Add social links, a
+                              description, profile & banner images, and set a
+                              secondary sales fee.
+                           </p>
+                        </div>
+                        <div class="list_sale">
+                           <span>
+                              <img src="/svg/Bookmark.svg" alt="" />
+                           </span>
+                           <p class="created_or_sell--title">
+                              List them for sale
+                           </p>
+                           <p class="created_or_sell--desc">
+                              Choose between auctions, fixed-price listings, and
+                              declining-price listings. You choose how you want
+                              to sell your NFTs, and we help you sell them
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
          </div>
       </main>
+      <section id="articles">
+         <div class="container">
+            <div class="articles-content">
+               <h3>Articles</h3>
+               <div class="articles--cards">
+                  <div class="articles--card">
+                     <div class="articles--card--img">
+                        <img src="/svg/artcles/arct1.svg" alt="" />
+                     </div>
+                     <div class="articles--card--desc">
+                        <p class="articles--card--title">
+                           We've lowered marketplace fees on all your favorite
+                           NFTs
+                        </p>
+                        <p class="articles--card--date">January 23, 2022</p>
+                     </div>
+                  </div>
 
+                  <div class="articles--card">
+                     <div class="articles--card--img">
+                        <img src="/svg/artcles/arct2.svg" alt="" />
+                     </div>
+                     <div class="articles--card--desc">
+                        <p class="articles--card--title">
+                           Your Ultimate Guide to Getting Started With NFTs on
+                           Rarible
+                        </p>
+                        <p class="articles--card--date">April 03, 2022</p>
+                     </div>
+                  </div>
+
+                  <div class="articles--card">
+                     <div class="articles--card--img">
+                        <img src="/svg/artcles/arct3.svg" alt="" />
+                     </div>
+                     <div class="articles--card--desc">
+                        <p class="articles--card--title">
+                           Why Community Marketplaces are the future of NFT
+                           trading
+                        </p>
+                        <p class="articles--card--date">July 7, 2022</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <a class="btn">see more</a>
+         </div>
+      </section>
+
+      <footer>
+         <div class="container">
+            <div class="footer--content">
+               <div class="footer-top">
+                  <div class="footer-top-title">
+                     <h4>Get More Updates</h4>
+                     <p>
+                        Join our mailing list to stay in the loop with our
+                        newest feature releases, NFT drops, and tips and tricks
+                     </p>
+                  </div>
+                  <div class="footer-top-search">
+                     <input
+                        type="search"
+                        name=""
+                        class="search"
+                        placeholder="Your Email..."
+                     />
+                     <input type="submit" value=" I’m In" class="submit" />
+                  </div>
+               </div>
+
+               <hr />
+
+               <div class="footer-bottom">
+                  <div class="footer-bottom-left">
+                     <img src="/svg/logo.svg" alt="Logo" class="logo" />
+                     <p>The leading NFT Marketplace on Ethereum</p>
+                     <p>Home to the next generation of digital creators.</p>
+                     <p>Discover the best NFT collections.</p>
+                     <div class="social">
+                        <a href=""
+                           ><img src="/svg/social/discord.svg" alt="Discord"
+                        /></a>
+                        <a href=""
+                           ><img src="/svg/social/twitter.svg" alt="Twitter"
+                        /></a>
+                        <a href=""
+                           ><img
+                              src="/svg/social/instagram.svg"
+                              alt="Instagram"
+                        /></a>
+                        <a href=""
+                           ><img src="/svg/social/youtube.svg" alt="Youtube"
+                        /></a>
+                     </div>
+                  </div>
+                  <div class="footer-bottom-mid">
+                     <h4>Marketplace</h4>
+                     <a href="">Explore</a>
+                     <a href="">Articles</a>
+                     <a href="">How It Works</a>
+                     <a href="">Help</a>
+                  </div>
+                  <div class="footer-bottom-right">
+                     <h4>Links</h4>
+                     <a href="">Tokens</a>
+                     <a href="">API</a>
+                     <a href="">Big Bounty</a>
+                     <a href="">Become Partners</a>
+                  </div>
+               </div>
+
+               <div class="copyright">
+                  <p>© 2022 ENDFT. All Right Reserved</p>
+                  <p>
+                     recreated by
+                     <a
+                        href="https://www.linkedin.com/in/eomgn/"
+                        target="_blank"
+                        >Matheus Gabriel Nogueira</a
+                     >
+                  </p>
+               </div>
+            </div>
+         </div>
+      </footer>
+
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+      <!-- script -->
       <script type="module" src="./src/main.js"></script>
    </body>
 </html>
