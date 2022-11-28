@@ -34,7 +34,6 @@ body {
    color: #fff;
 
    overflow-x: hidden;
-   touch-action: none;
 }
 
 ::-webkit-scrollbar {
