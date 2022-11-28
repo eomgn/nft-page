@@ -46,7 +46,7 @@ body {
 }
 
 #bg {
-   background-image: url('./bg.svg');
+   background-image: url('../bg.svg');
    background-repeat: no-repeat;
    background-position-y: -350px;
    background-size: cover;
