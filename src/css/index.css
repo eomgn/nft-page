@@ -251,6 +251,8 @@ h3 {
 
       z-index: 999;
 
+      overflow-y: auto;
+
       transition: 0.5s;
       visibility: hidden;
    }
